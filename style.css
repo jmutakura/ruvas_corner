@@ -1,5 +1,10 @@
 :root {
-	--main-bg-color: #ffe3e6;
+	--main-bg-color: #ffebed;
+	--main-highlight-txt: #4d2922;
+	--secondary-highlight: #d89a63;
+	--light-text: #fef7f6;
+	--section-height: 90vh;
+	--section-width: 100vw;
 }
 
 * {
@@ -8,10 +13,13 @@
 	box-sizing: border-box;
 	background-color: var(--main-bg-color);
 }
+body {
+	background-color: var(--main-bg-color);
+}
 
 .navbar {
-	padding: 0;
-	margin-top: 2rem;
+	padding: 2rem;
+	margin-top: 0;
 }
 
 .collapse {
@@ -25,5 +33,46 @@
 
 .main {
 	padding: 0;
-	margin: 0;
+	margin: 3rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.main .intro {
+	height: var(--section-height);
+	width: var(--section-width);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.main .intro .row .col {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.main .intro .row .col .intro-contents {
+	text-align: center;
+}
+
+.main .intro .row .col h1 {
+	font-size: 5rem;
+	color: var(--highlight-txt);
+	margin-bottom: 2rem;
+}
+
+.main .intro .row .col .btn {
+	margin-top: 3rem;
+	width: 20rem;
+	height: 4rem;
+	background-color: var(--secondary-highlight);
+	border: none;
+	border-radius: 5px 20px;
+	color: var(--light-text);
+}
+
+.main .intro .row .col img {
+	width: 100%;
+	aspect-ratio: 0.9 / 1;
 }
