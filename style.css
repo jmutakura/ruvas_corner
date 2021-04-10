@@ -35,6 +35,7 @@ body {
 	padding: 0;
 	margin: 3rem;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
@@ -42,7 +43,7 @@ body {
 .main .intro {
 	height: var(--section-height);
 	width: var(--section-width);
-	display: flex;
+	display: block;
 	justify-content: center;
 	align-items: center;
 }
@@ -74,5 +75,10 @@ body {
 
 .main .intro .row .col img {
 	width: 100%;
-	aspect-ratio: 0.9 / 1;
+	aspect-ratio: 4 / 4;
+}
+
+.main .about {
+	height: var(--section-width);
+	width: var(--section-width);
 }
